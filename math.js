@@ -1,4 +1,4 @@
-
+//Cuadrado
 console.group('cuadrado')
 
 const ladoCuadrado= 4
@@ -17,7 +17,7 @@ function cuadrado(lado1){
     }
 }
 console.groupEnd('cuadrado')
-
+//triangulo
 
 console.group('Triangulo') 
 
@@ -42,3 +42,44 @@ function triangulo(lado1,lado2,base,altura){
     }
 }
 console.groupEnd('Triangulo')
+
+
+//circulo
+
+console.group('Circulo')
+const radioCirculo=3;
+const diametroCirculo= radioCirculo*2;
+const areaCirculo= Math.PI*(radioCirculo**2)
+
+console.log({
+    radioCirculo,
+    diametroCirculo,
+    areaCirculo,
+})
+
+function Circulo(radio){
+    return{
+        radio,
+        area: Math.PI*Math.pow(radio,2),
+        circunferencia:Math.PI*radio,
+    }
+}
+
+console.groupEnd('Circulo')
+
+//Altura de un triangulo isosceles
+
+console.group('alturaTriangulo')
+const ladoTriangulo=6
+const baseTriangulo=4
+const alturaTriangulo=Math.sqrt((ladoTriangulo**2)-(Math.pow(baseTriangulo,2)/4))
+
+console.log({
+    alturaTriangulo,
+})
+
+
+console.group('alturaTriangulo')
+
+
+

@@ -1,0 +1,41 @@
+body {
+    margin:0;
+    padding: 0;
+}
+.grillaTienda{
+    border-top: 2px solid gray;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.producto1 img{
+    width: 420px;
+    border-radius: 40px;
+    
+}
+.producto1 h1{
+    width: 400px;
+    text-align: center;
+}
+.producto1 .descuento1{
+    width: 200px;
+    height: 30px;
+    background-color: green;
+}
+.producto2 img{
+    width: 420px;
+    border-radius: 40px;
+}
+.producto2 h1{
+    width: 400px;
+    text-align: center;
+}
+.producto3 img{
+    width: 420px;
+    border-radius: 40px;
+}
+.producto3 h1{
+    width: 400px;
+    text-align: center;
+}

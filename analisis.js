@@ -61,6 +61,7 @@ function proyeccionSalarial(nombrePersona){
 
 }
 
+//Analísis empresarial
 
 const empresas= {}
 for(persona of salarios){
@@ -113,14 +114,39 @@ function proyeccionSalarialEmpresa(nombre){
     let proyeccion=medEmpresa[medEmpresa.length-1]+aumento
     console.log({proyeccion,aumento,medProy})
 
-
-
-
-
-
-
-
-
     }
     
+}
+
+
+//analisis general
+
+function medianaGeneral(){
+    const personas= salarios.map(nombre=> nombre.name)
+    let medianas=[]
+
+    for(let i =0; i<personas.length;i++){
+        medianas.push(medianaPersonas(personas[i]))
+    
+    }
+    console.log(medianas)
+
+    let medOrdenadas=medianas.sort((a,b)=> a-b)
+
+    let top=(medOrdenadas.length*10)/100
+    let medTop=[]
+    for(let j=(medOrdenadas.length-top) ; j<medOrdenadas.length; j++){
+        medTop.push(medOrdenadas[j])
+        console.log(medTop)}
+
+    
+//slice 
+//Deja al arreglo original con todos sus elementos
+// let limite= medORdenadas.length-top
+// let medTop= medOrdenadas.slice(ñimite,medOrdenadas.length)
+//splice
+//Separa los elementos del arreglo original, 
+    return med(medTop)
+
+  
 }
